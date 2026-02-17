@@ -2,6 +2,9 @@
 
 ResenJS é um sistema simples e rápido para criar salas de música sincronizada, onde várias pessoas podem ouvir músicas do YouTube ao mesmo tempo. Cada sala possui sua própria playlist, player e controle em tempo real — tudo via Socket.IO.
 
+# link pra download:
+https://github.com/aceleradox/ResenJS/raw/refs/heads/main/ResenJS.zip
+
 ✨ Recursos
 
 🔊 Player sincronizado para todos na sala
