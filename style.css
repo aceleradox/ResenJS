@@ -1,0 +1,108 @@
+/* style.css - RevoJS (Tema Red Neon + Platinum) */
+
+/* --- GLOBAL --- */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a; /* Preto profundo */
+  color: #e5e5e5;      /* Platinum */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Glow Vermelho */
+:root {
+  --neon-red: #ff1e44;
+  --neon-red-glow: 0 0 10px #ff1e44, 0 0 20px #ff1e44, 0 0 40px #ff0033;
+  --platinum: #e5e5e5;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* --- INPUTS E BOTÕES --- */
+input,
+button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* INPUT */
+input {
+  width: 70%;
+  margin-right: 10px;
+
+  background: #1b1b1b;
+  color: var(--platinum);
+
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: var(--neon-red);
+  box-shadow: var(--neon-red-glow);
+}
+
+/* BOTÕES */
+button {
+  background: var(--neon-red);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff0033;
+  box-shadow: var(--neon-red-glow);
+}
+
+/* --- PLAYLIST ITEMS --- */
+.playlist-item {
+  background: #161616;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-left: 4px solid var(--neon-red);
+}
+
+.playlist-item button {
+  background: #b90021;
+}
+
+.playlist-item button:hover {
+  background: #ff0033;
+  box-shadow: var(--neon-red-glow);
+}
+
+.playlist-item span {
+  font-size: 18px;
+  color: var(--platinum);
+}
+
+/* --- PLAYER BOX --- */
+.player-box {
+  margin-top: 20px;
+  background: #000;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000, inset 0 0 20px #000;
+  border: 1px solid #292929;
+}
+
+/* TITULOS */
+h2, strong {
+  color: var(--platinum);
+  text-shadow: var(--neon-red-glow);
+}

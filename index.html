@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>ResenJS — Cliente</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- YouTube Player API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <div class="container">
+
+    <h2>ResenJS — Cliente</h2>
+
+    <!-- Tela de Join -->
+    <div id="join-screen">
+      <div>
+        Room: 
+        <input id="room" value="party"/>
+        <button id="join">Join</button>
+      </div>
+    </div>
+
+    <!-- Tela do Player (oculta até entrar na room) -->
+    <div id="player-screen" style="display:none;">
+
+      <!-- Adicionar música -->
+      <div style="margin-top:8px;">
+        <input id="url" placeholder="YouTube link ou ID" size="40"/>
+        <button id="add">Adicionar à playlist</button>
+      </div>
+
+      <!-- Controles -->
+      <div style="margin-top:8px;">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+      </div>
+
+      <!-- Música atual -->
+      <div id="now" style="margin-top:10px;">
+        <strong>Now:</strong> -
+      </div>
+
+      <!-- Player YouTube -->
+      <div id="player" class="player-box"></div>
+
+      <!-- Playlist -->
+      <div style="margin-top:10px;">
+        <strong>Playlist:</strong>
+        <ol id="playlist"></ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Sockets -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Client -->
+  <script src="client.js"></script>
+</body>
+</html>
