@@ -5,6 +5,9 @@ ResenJS é um sistema simples e rápido para criar salas de música sincronizada
 # link pra download:
 https://github.com/aceleradox/ResenJS/raw/refs/heads/main/ResenJS.zip
 
+# caso queira iniciar no modo janela, baixe essa addon e coloque na pasta rais do app resenJS/ e execulte o startx.bat
+https://github.com/aceleradox/ResenJS/raw/refs/heads/main/ResenJS%20%20%20Gui%20Addon.rar
+
 ✨ Recursos
 
 🔊 Player sincronizado para todos na sala
